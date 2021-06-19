@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pedro Lisboa">
+    <meta name="description" content="atividades iniciais com CSS">
+    <title>Iniciando HTML E CSS</title>
+
+    <style>
+        /*CSS Dentro do HTML somente para fins académicos*/
+        body{
+            background-color: lightblue;
+        }
+
+        h1:first-child{
+            width: 500px;
+            height: 100px;
+            text-decoration: underline;
+            text-align: left;
+            background-color: lime;
+            margin-top: 50px;
+            padding: 100px 50px 80px 60px;
+        }
+
+        h1{
+            background-color: rebeccapurple;
+            color: blue;
+            font-family: 'helvetica', sans-serif;
+            font-style: italic;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        p{
+            background-color: salmon;
+            font-size: 36px;
+            color: blueviolet;
+            font-variant: small-caps;
+            padding: 0 25%;
+            margin: 0 0 100px 0;
+            text-indent: 2rem;
+        }
+
+        .sub-titulo-com-h1{
+            color: lightgreen;
+            font-size: 4rem;
+        }
+
+        #primeiro-id{
+            color: lightgoldenrodyellow;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        a{
+            display: block;
+            text-align: center;
+            font-size: 2rem;
+        }
+        a:active{
+            color: lime;
+        }
+
+        a:hover{
+            color: goldenrod;
+        }
+
+        a:visited{
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Título 1</h1>
+    <h1 class="sub-titulo-com-h1">Título 2</h1>
+    <h1 class="sub-titulo-com-h1">Título 3</h1>
+    <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse fugit culpa, nobis, voluptate eaque alias aliquam officia aspernatur tempore, magnam iusto fuga. Cum totam doloremque minus aspernatur, dolorum excepturi vitae.</P>
+    <P id="primeiro-id">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse fugit culpa, nobis, voluptate eaque alias aliquam officia aspernatur tempore, magnam iusto fuga. Cum totam doloremque minus aspernatur, dolorum excepturi vitae.</P>
+    <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse fugit culpa, nobis, voluptate eaque alias aliquam officia aspernatur tempore, magnam iusto fuga. Cum totam doloremque minus aspernatur, dolorum excepturi vitae.</P>
+    <a href="#">TESTE</a>
+</body>
+</html>
