@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-brr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas aninhadas e de Definição</title>
+
+    <style>
+        li ol{
+            height: 0;
+            overflow: hidden;
+        }
+
+        li:hover{
+            background-color: #ccc;
+        }
+
+        li:hover ol{
+            height: 50px;
+            transition: height .5s;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Listas aninhadas e de Definição</h1>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2
+            <ol>
+                <li>Item 2.1</li>
+                <li>Item 2.2</li>
+            </ol>
+        </li>
+
+        <hr>
+
+        <dl>
+            <dt>HTML</dt>
+            <dd>Linguagem de marcação de Hiper Text</dd>
+            <dt>CSS</dt>
+            <dd>Linguagem para estilização de folhas</dd>
+        </dl>
+
+        <hr>
+
+        <dl>
+            <dt>WWW</dt>
+            <dt>Internet</dt>
+            <dd>Rede mundial de computador</dd>
+
+            <dt>Javascript</dt>
+            <dd>Linguagem script para internet</dd>
+            <dd>Node</dd>
+            <dd>NodeJS</dd>
+        </dl>
+        
+    </ul>
+    
+</body>
+</html>
