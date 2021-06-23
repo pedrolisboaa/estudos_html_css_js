@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entradas de dados do Form</title>
+</head>
+<body>
+
+    <h1>Entradas de dados</h1>
+
+    <form action="">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+
+            <label for="">Email</label>
+            <input type="email">
+
+            <br>
+            <label for="">Numero de filhos</label>
+            <input type="number" min="0" max="100">
+            <br>
+
+            <label for="">Nascimento</label>
+            <input type="date" min="2021-06-20">
+            <br>
+
+            <p>Sexo:</p>
+            <label for="">
+                Masculino
+            <input type="radio" name="sexo" value="m" checked>
+            </label>
+            <label for="">
+                Feminino
+                <input type="radio" name="sexo" value="f">
+            </label>
+            <br>
+
+            <label for="">Estado</label>
+            <select name="" id="">
+                <option value="0">Selecione</option>
+                <option value="df">DF</option>
+                <option value="mg">MG</option>
+            </select>
+
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Area de interesse</legend>
+        </fieldset>
+        <input type="submit" value="enviar">
+    </form>
+    
+</body>
+</html>

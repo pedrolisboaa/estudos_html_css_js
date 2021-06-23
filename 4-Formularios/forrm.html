@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <style>
+        .form-login{
+            width: 250px;
+            margin: 50px auto 0;
+            font-family: sans-serif;
+        }
+        .form-login fieldset{
+            background-color: #ccc;
+        }
+
+        .form-login legend{
+            display: inline-block;
+            background-color: red;
+        }
+
+        .form-login label{
+            margin-top: 15px;
+            display: block;
+        }
+
+        #usuario, #senha, .btn{
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 15px;
+            font-size: 15px;
+            border: none;
+        }
+
+        .btn{
+            margin-top: 1rem;
+        }
+
+        #usuario:focus, #senha:focus{
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Formulário</h1>
+
+    <form action="#" method="POST" class="form-login">
+        <fieldset>
+            <legend>Login</legend>
+            <label for="usuario">Digite seu usuário</label>
+            <input type="text" id="usuario" name="usuario" autofocus>
+
+            <label for="senha">Digite a senha</label>
+            <input type="password" id="senha" name="senha">
+
+            <input type="submit" value="Logar" class="btn">
+        </fieldset>
+    </form>
+    
+</body>
+</html>
