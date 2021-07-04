@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/c59ca1806e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <title>Projeto Strata</title>
 </head>
 
@@ -16,11 +22,11 @@
         <a href="#" class="main-header-link">
             <img src="images/avatar.jpg" alt="texto qualquer">
         </a>
-        <h1>
+        <h1 class="main-header-title">
             Trabalhos e groselhas de<br>
             <strong>Pedro Henrique Lisboa</strong>,<br>
             um zé ninguem qualquer<br>
-            Retirado de <a href="https://html5up.net/">html5up.net</a>
+            Retirado de <a href="https://html5up.net/" class="main-header-link">html5up.net.</a>
         </h1>
 
     </header>
@@ -120,11 +126,17 @@
                 eaque recusandae, impedit repellendus ipsa eveniet fugiat. Tenetur <sup>veniam</sup> ipsum <sub>consequatur</sub>quos hic
                 quod <code>incidunt asdaspoj  aksdlaksd console.log() </code>.</p>
 
+            <h1>Titulo h1</h1>   
+            <h2>Titulo h2</h2>   
+            <h3>Titulo h3</h3>   
+            <h4>Titulo h4</h4>   
+            <h5>Titulo h5</h5>   
+            <h6>Titulo h6</h6>   
             <blockquote cite="http://developer.mozilla.org">
-                 <p>Esta é uma citação tirada da Mozilla Developer Center.</p>
+                 Esta é uma citação tirada da Mozilla Developer Center.
             </blockquote>
 
-            <h4>Pre formatado</h4>
+            <h4>Preformatado</h4>
             <pre>
                 <code>
 public class Teste{
@@ -136,54 +148,67 @@ public class Teste{
             </pre>
 
             <h4>Listas</h4>
-            <h5>Não ordenada</h5>
-            <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-            </ul>
 
-            <h5>Ordenada</h5>
-            <ol>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-            </ol>
+            <div class="row">
+                <div class="col-2">
+                    <h5>Não ordenada</h5>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
 
-            <h5>Alternate</h5>
-            <ul class="ul-alternate">
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-            </ul>
-
-            <h5>Icons</h5>
-            <ul>
-                <li><i class="fas fa-fish"></i></li>
-                <li><i class="fas fa-pizza-slice"></i></li>
-                <li><i class="fas fa-hotdog"></i></li>
-            </ul>
-
+                    <h5>Ordenada</h5>
+                    <ol>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ol>
+                </div>
+                <div class="col-2">
+                    <h5>Alternate</h5>
+                    <ul class="ul-alternate">
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+        
+                    <h5>Icons</h5>
+                    <ul class="ul__icons">
+                        <li><i class="fas fa-fish"></i></li>
+                        <li><i class="fas fa-pizza-slice"></i></li>
+                        <li><i class="fas fa-hotdog"></i></li>
+                    </ul>
+                </div>
+            </div>
+            
             <h5>Actions</h5>
-            <p>
-                <a class="button-default" href="#">Default</a>
-                <a class="button-default button-default-stroke" href="#">Default</a>
-            </p>
 
-            <p>
-                <a class="button-default button-default-small" href="#">Default</a>
-                <a class="button-default button-default-small button-default-stroke" href="#">Default</a>
-            </p>
-
-            <p>
-                <a class="button-default button-default-full" href="#">Default</a>
-                <a class="button-default button-default-full button-default-stroke" href="#">Default</a>
-            </p>
+            <div class="row">
+                <div class="col-2">
+                    <p>
+                        <a class="button-default" href="#">Default</a>
+                        <a class="button-default button-default-stroke" href="#">Default</a>
+                    </p>
+        
+                    <p>
+                        <a class="button-default button-default-small" href="#">Default</a>
+                        <a class="button-default button-default-small button-default-stroke" href="#">Default</a>
+                    </p>
+                </div>
+                <div class="col-2">
+                    <p>
+                        <a class="button-default button-default-full" href="#">Default</a>
+                        <a class="button-default button-default-full button-default-stroke" href="#">Default</a>
+                    </p>
+        
+                </div>
+            </div>
 
             <h5>Table</h5>
             <p>Default</p>
 
-            <table>
+            <table class="table">
                 <tr>
                     <td>Nome</td>
                     <td>Description</td>
@@ -220,21 +245,27 @@ public class Teste{
             </table>
 
             <h5>Buttons</h5>
-            <p>
-                <button class="button-default">Default</button>
-                <button class="button-default button-default-stroke">Default</button>
-            </p>
 
-            <p>
-                <button class="button-default button-default-small">Default</a>
-                <button class="button-default button-default-small button-default-stroke">Default</button>
-            </p>
+                <p>
+                    <button class="button-default">Default</button>
+                    <button class="button-default button-default-stroke">Default</button>
+                </p>
+        
+                <p>
+                    <button class="button-default button-default-small">Default</a>
+                    <button class="button-default button-default-small button-default-stroke">Default</button>
+                </p>
+               
+                <p>
+                    <button class="button-default button-default-full">Default</a>
+                    <button class="button-default button-default-full button-default-stroke">Default</button>
+                </p>
 
-            <p>
-                <button class="button-default button-default-full">Default</a>
-                <button class="button-default button-default-full button-default-stroke">Default</button>
-            </p>
-            
+                <p>
+                    <button class="button-default button-default-full">Default</a>
+                    <button class="button-default button-default-full button-default-stroke">Default</button>
+                </p>
+
             <input type="submit" class="button-default" value="Enviar">
 
             <h5>Forms</h5>
