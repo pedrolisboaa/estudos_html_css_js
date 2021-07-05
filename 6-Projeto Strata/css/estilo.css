@@ -288,6 +288,32 @@ img{
     margin-bottom: 0;
 }
 
+.main-footer{
+    position: fixed;
+    bottom: 0;
+    width: 35%;
+    left: 0;
+    padding: 0 54px 72px 0;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.main-footer ul{
+    list-style-type: none;
+}
+.ul-icons li{
+    display: inline-block;
+}
+
+.copyrigght li{
+    display: inline-block;
+}
+
+.main-footer a{
+    color: #787878;
+    border: none;
+}
+
 
 .row{
     overflow: auto;
