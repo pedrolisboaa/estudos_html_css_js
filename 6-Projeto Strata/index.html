@@ -19,7 +19,7 @@
 
     <header class="main-header">
 
-        <a href="#" class="main-header-link">
+        <a href="#" class="main-header-link imagem-link">
             <img src="images/avatar.jpg" alt="texto qualquer">
         </a>
         <h1 class="main-header-title">
@@ -48,37 +48,44 @@
 
         <section class="main-content-section">
             <h3>Recent Works</h3>
-            <article class="recent-works-card">
-                <a href="images/fulls/01.jpg"><img src="images/thumbs/01.jpg" alt=""></a>
-                <p class="recent-works-card-title">Magna sed consequat tempus</p>
-                <p>Magna sed consequat tempus</p>
-            </article>
-            <article class="recent-works-card">
-                <a href="images/fulls/02.jpg"><img src="images/thumbs/02.jpg" alt=""></a>
-                <p class="recent-works-card-title">Magna sed consequat tempus</p>
-                <p>Magna sed consequat tempus</p>
-            </article>
-            <article class="recent-works-card">
-                <a href="images/fulls/03.jpg"><img src="images/thumbs/03.jpg" alt=""></a>
-                <p class="recent-works-card-title">Magna sed consequat tempus</p>
-                <p>Magna sed consequat tempus</p>
-            </article>
-            <article class="recent-works-card">
-                <a href="images/fulls/04.jpg"><img src="images/thumbs/04.jpg" alt=""></a>
-                <p class="recent-works-card-title">Magna sed consequat tempus</p>
-                <p>Magna sed consequat tempus</p>
-            </article>
-            <article class="recent-works-card">
-                <a href="images/fulls/05.jpg"><img src="images/thumbs/05.jpg" alt=""></a>
-                <p class="recent-works-card-title">Magna sed consequat tempus</p>
-                <p>Magna sed consequat tempus</p>
-            </article>
-            <article class="recent-works-card">
-                <a href="images/fulls/06.jpg"><img src="images/thumbs/06.jpg" alt=""></a>
-                <p class="recent-works-card-title">Magna sed consequat tempus</p>
-                <p>Magna sed consequat tempus</p>
-            </article>
 
+            <div class="row">
+                <div class="col-2">
+                    <article class="recent-works-card">
+                        <a class="imagem-link" href="images/fulls/01.jpg"><img src="images/thumbs/01.jpg" alt=""></a>
+                        <p class="recent-works-card-title">Magna sed consequat tempus</p>
+                        <p>Magna sed consequat tempus</p>
+                    </article>
+                    <article class="recent-works-card">
+                        <a class="imagem-link"a href="images/fulls/02.jpg"><img src="images/thumbs/02.jpg" alt=""></>
+                        <p class="recent-works-card-title">Magna sed consequat tempus</p>
+                        <p>Magna sed consequat tempus</p>
+                    </article>
+                    <article class="recent-works-card">
+                        <a class="imagem-link" href="images/fulls/03.jpg"><img src="images/thumbs/03.jpg" alt=""></a>
+                        <p class="recent-works-card-title">Magna sed consequat tempus</p>
+                        <p>Magna sed consequat tempus</p>
+                    </article>
+                </div>
+                <div class="col-2">
+                    <article class="recent-works-card">
+                        <a class="imagem-link" href="images/fulls/04.jpg"><img src="images/thumbs/04.jpg" alt=""></a>
+                        <p class="recent-works-card-title">Magna sed consequat tempus</p>
+                        <p>Magna sed consequat tempus</p>
+                    </article>
+                    <article class="recent-works-card">
+                        <a class="imagem-link" href="images/fulls/05.jpg"><img src="images/thumbs/05.jpg" alt=""></a>
+                        <p class="recent-works-card-title">Magna sed consequat tempus</p>
+                        <p>Magna sed consequat tempus</p>
+                    </article>
+                    <article class="recent-works-card">
+                        <a class="imagem-link" href="images/fulls/06.jpg"><img src="images/thumbs/06.jpg" alt=""></a>
+                        <p class="recent-works-card-title">Magna sed consequat tempus</p>
+                        <p>Magna sed consequat tempus</p>
+                    </article>
+                </div>
+            </div>
+           
             <a class="button-default" href="#" title="Veja mais">Veja Portfolio completo</a>
         </section>
 
@@ -89,33 +96,47 @@
                 lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.
             </p>
 
-            <form action="#" method="POST">
-                <label for="nome">Nome</label>
-                <input type="text" id="nome" name="nome">
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email">
+            <div class="row">
+                <div class="col-2-3">
+                    <form action="#" method="POST">
+                        <div class="row">
+                            <div class="col-2">
+                                <label for="nome">Nome</label>
+                                <input type="text" id="nome" name="nome">
+                            </div>
+                            <div class="col-2">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email">
+                            </div>
+                        </div>
+                       
+        
+                        <label for="mensagem">Digite sua mensagem</label>
+                        <textarea name="mensagem" id="mensagem"></textarea>
+        
+                        <input type="submit" value="Enviar" class="button-default button-default-stroke">
+                    </form>
+                </div>
 
-                <label for="mensagem">Digite sua mensagem</label>
-                <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+                <div class="col-1-3">
+                    <address>
+                        <p>
+                            <span>Endereço</span>
+                            1234 Somewhere Rd. Nashville, TN 00000 United States
+                        </p>
+                        <p>
+                            <span>Telefone</span>
+                            +55 61 99999-9999
+                        </p>
+                        <p>
+                            <span>E-mail</span>
+                            email@bolado.com.br
+                        </p>
+                    </address>
+                </div>
+            </div>
 
-                <input type="submit" value="Enviar">
-            </form>
-
-            <address>
-                <p>
-                    <span>Endereço</span>
-                    1234 Somewhere Rd. Nashville, TN 00000 United States
-                </p>
-                <p>
-                    <span>Telefone</span>
-                    +55 61 99999-9999
-                </p>
-                <p>
-                    <span>E-mail</span>
-                    email@bolado.com.br
-                </p>
-            </address>
         </section>
 
         <section class="main-content-section">
@@ -209,7 +230,7 @@ public class Teste{
             <p>Default</p>
 
             <table class="table">
-                <tr>
+                <tr class="table__header">
                     <td>Nome</td>
                     <td>Description</td>
                     <td>Price</td>
@@ -239,8 +260,8 @@ public class Teste{
                     <td>Pedro Henrique do Nascimento Lisboa</td>
                     <td>29.90</td>
                 </tr>
-                <tr>
-                    <td rowspan="2">149,50</td>
+                <tr class="table__footer">
+                    <td colspan="3" >149,50</td>
                 </tr>
             </table>
 
@@ -296,7 +317,7 @@ public class Teste{
                 </label>
 
                 <input type="submit" class="button-default" value="Enviar">
-                <input type="reset" class="button-default-stroke" value="Limpar">
+                <input type="reset" class="button-default button-default-stroke" value="Limpar">
             </form>
         </section>
 
@@ -307,25 +328,33 @@ public class Teste{
                 <img src="images/fulls/01.jpg" alt="">
             </div>
 
-            <div class="gallery-thumb">
-                <img src="images/thumbs/01.jpg" alt="">
-                <img src="images/thumbs/02.jpg" alt="">
-                <img src="images/thumbs/03.jpg" alt="">
-                <img src="images/thumbs/04.jpg" alt="">
-                <img src="images/thumbs/05.jpg" alt="">
-                <img src="images/thumbs/06.jpg" alt="">
-                <img src="images/thumbs/01.jpg" alt="">
-                <img src="images/thumbs/02.jpg" alt="">
-                <img src="images/thumbs/03.jpg" alt="">
+            <div class="gallery-thumb row">
+                <img class="col-1-3" src="images/thumbs/01.jpg" alt="">
+                <img class="col-1-3" src="images/thumbs/02.jpg" alt="">
+                <img class="col-1-3" src="images/thumbs/03.jpg" alt="">
+                <img class="col-1-3" src="images/thumbs/04.jpg" alt="">
+                <img class="col-1-3" src="images/thumbs/05.jpg" alt="">
+                <img class="col-1-3" src="images/thumbs/06.jpg" alt="">
+                <img class="col-1-3" src="images/thumbs/01.jpg" alt="">
+                <img class="col-1-3" src="images/thumbs/02.jpg" alt="">
+                <img class="col-1-3" src="images/thumbs/03.jpg" alt="">
             </div>
 
             <h4>Left &amp; Right</h4>
-            <p>
-                <img class="img-left" src="images/avatar.jpg" alt=""> Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae labore saepe aliquam nostrum, architecto ipsam delectus optio placeat. Numquam odio laborum quos facilis explicabo nisi optio culpa quaerat reprehenderit molestiae.
+            <p class="left">
+                <img class="img-left" src="images/avatar.jpg" alt=""> 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae labore saepe aliquam nostrum, architecto ipsam delectus optio placeat. Numquam odio laborum quos facilis explicabo nisi optio culpa quaerat reprehenderit molestiae.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae labore saepe aliquam nostrum, architecto ipsam delectus optio placeat. Numquam odio laborum quos facilis explicabo nisi optio culpa quaerat reprehenderit molestiae.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae labore saepe aliquam nostrum, architecto ipsam delectus optio placeat. Numquam odio laborum quos facilis explicabo nisi optio culpa quaerat reprehenderit molestiae.
+                </p>
             </p>
 
-            <p>
-                <img class="img-right" src="images/avatar.jpg" alt=""> Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae labore saepe aliquam nostrum, architecto ipsam delectus optio placeat. Numquam odio laborum quos facilis explicabo nisi optio culpa quaerat reprehenderit molestiae.
+            <p class="right">
+                <img class="img-right" src="images/avatar.jpg" alt=""> 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae labore saepe aliquam nostrum, architecto ipsam delectus optio placeat. Numquam odio laborum quos facilis explicabo nisi optio culpa quaerat reprehenderit molestiae.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae labore saepe aliquam nostrum, architecto ipsam delectus optio placeat. Numquam odio laborum quos facilis explicabo nisi optio culpa quaerat reprehenderit molestiae.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae labore saepe aliquam nostrum, architecto ipsam delectus optio placeat. Numquam odio laborum quos facilis explicabo nisi optio culpa quaerat reprehenderit molestiae.
+                </p>
             </p>
         </section>
 
