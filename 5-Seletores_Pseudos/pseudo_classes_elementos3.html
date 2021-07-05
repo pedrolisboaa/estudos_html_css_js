@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div p:nth-of-type(3) {
+            color: blue
+        }
+
+        .destaque:first-child {
+            color: green;
+        }
+
+        p:last-child {
+            text-align: center;
+        }
+
+        .parte__dois p::first-letter{
+            font-size: 2em;
+            float: left;
+            line-height: 1;
+            display: block;
+            margin-right: .1em;
+        }
+
+        .parte__dois p::first-line{
+            color: brown;
+        }
+
+        .parte__dois p::selection{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <p class="destaque">meu parágrafo</p>
+        <p>meu parágrafo</p>
+        <hr>
+        <p>meu parágrafo</p>
+        <p>meu parágrafo</p>
+        <hr>
+        <p class="destaque">meu parágrafo</p>
+        <p>meu parágrafo</p>
+        <hr>
+        <p>meu parágrafo</p>
+        <p class="destaque">meu parágrafo</p>
+        <hr>
+        <p>meu parágrafo</p>
+        <p>meu parágrafo</p>
+        <hr>
+        <p class="destaque">meu parágrafo</p>
+        <p>meu parágrafo</p>
+    </div>
+
+    <div class="parte__dois">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sequi eius, delectus doloribus nobis
+            officiis nesciunt, unde facere animi in repellat excepturi accusamus maiores fuga facilis aliquam dolores,
+            possimus incidunt?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sequi eius, delectus doloribus nobis
+            officiis nesciunt, unde facere animi in repellat excepturi accusamus maiores fuga facilis aliquam dolores,
+            possimus incidunt?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sequi eius, delectus doloribus nobis
+            officiis nesciunt, unde facere animi in repellat excepturi accusamus maiores fuga facilis aliquam dolores,
+            possimus incidunt?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sequi eius, delectus doloribus nobis
+            officiis nesciunt, unde facere animi in repellat excepturi accusamus maiores fuga facilis aliquam dolores,
+            possimus incidunt?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sequi eius, delectus doloribus nobis
+            officiis nesciunt, unde facere animi in repellat excepturi accusamus maiores fuga facilis aliquam dolores,
+            possimus incidunt?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sequi eius, delectus doloribus nobis
+            officiis nesciunt, unde facere animi in repellat excepturi accusamus maiores fuga facilis aliquam dolores,
+            possimus incidunt?</p>
+    </div>
+
+</body>
+
+</html>

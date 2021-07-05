@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        input[type="checkbox"]{
+            width: 100px;
+            height: 100px;
+            transition: all 0.5s;
+        }
+
+        input[type="checkbox"]:checked{
+            width: 50px;
+            height: 50px;
+        }
+
+        input[type="text"]:focus{
+            background-color: green;
+        }
+
+        input[type="email"]:hover{
+            background-color: blue;
+        }
+        button:disabled{
+            background-color: blueviolet;
+        }  
+
+        p{
+            color:red;
+        }    
+        
+        p:empty::before{
+            content: "Agora tem alguma coisa ";
+        }
+    </style>
+</head>
+<body>
+
+    <label for="sim">
+        <input type="checkbox" value="sim" id="sim"> Aceito o contrato
+    </label>
+
+    <button>Vai</button>
+    <button disabled>Volta</button>
+    
+    <p>Parágrafo 1</p>
+    <p></p>
+    <p></p>
+    <hr>
+
+    <input type="text" placeholder="nome">
+    <input type="email" name="" id="">
+    
+</body>
+</html>
