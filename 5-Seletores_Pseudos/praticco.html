@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+
+    <style>
+
+        body{
+            font-family: sans-serif;
+        }
+
+        a[target="_blank"]:after{
+            content: url(link-da-web.png);
+            display: inline-block;
+            margin-left: 5px;
+        }
+
+        a[href$=".pdf"]::before{
+            content: url(pdf\ \(1\).png);
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        .chk{
+            display: inline-block;
+            border: 5px;
+            border: 2px solid #ddd;
+            width: 15px;
+            height: 15px;
+            margin-right: 10px;
+        }
+
+        label{
+            height: 15px;
+            display: inline-block;
+        }
+    </style>
+   
+</head>
+
+<body>
+
+    <a href="http://www.google.com.br" target="_blank">Link externo</a>
+    <br>
+    <a href="qq.pdf">download do pdf</a>
+
+    <hr>
+
+    <input type="checkbox" name="qq" id="chk">
+    <label for="chk"><span class="chk"></span>li e aceito</label>
+
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .div1 {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            transform: translate(50%, 50%);
+        }
+
+        .div2 {
+            width: 150px;
+            height: 150px;
+            background-color: blue;
+            position: relative;
+            left: 50%;
+        }
+
+        .div3{
+            width: 50%;
+            background-color: aqua;
+            overflow: hidden;
+        }
+
+        .div3__interna{
+            background-color: yellow;
+            transform: translate(50%, 30px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="div1">
+        div1
+    </div>
+
+    <div class="div2">
+        div1
+    </div>
+
+    <hr>
+
+    <div class="div3">
+        <div class="div3__interna">
+            Conteudo qualquer
+        </div>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt voluptas dolorem ducimus atque, similique
+            aliquam ipsa deserunt accusamus doloremque officiis, corporis quod commodi possimus provident minus nemo
+            doloribus reiciendis. Similique!
+        </p>
+    </div>
+
+
+</body>
+
+</html>
