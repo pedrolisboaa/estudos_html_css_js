@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+html{
+    font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Oxygen";
+}
+
+.button{
+    display: inline-block;
+    padding: .95rem 2.5rem;
+    background-color: #58c4c4;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.button:hover{
+    background-color: #37a0a0;
+}
+
+.top-header{
+    text-align: center;
+}
+
+.top-header-logo{
+    margin: .5rem;
+}
+
+.top-nav{
+    background-color: #612674;
+    text-align: center;
+}
+
+.top-nav ul{
+    margin: 0;
+    padding: 1rem 0;
+    list-style: none;
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+}
+
+.top-nav a:hover{
+    background-color: #7c3792;
+}
+
+.top-content{
+    padding: 1em;
+    text-align: center;
+    background-color: #f6f6f6;
+}
+
+.top-content-title{
+    color: #612674;
+    font-size: 1.375rem;
+    margin: 1.375rem;
+}
+
+.top-content-subtitle{
+    color: #a87bb7;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.middle-content{
+    padding: 2rem;
+    background-color: #f6f6f6;
+    text-align: center;
+}
+
+.middle-content-title{
+    font-size: 1.25rem;
+    color: #652e78;
+    text-transform: uppercase;
+}
+
+.middle-content p {
+    line-height: 1.5;
+    color: #222;
+}
+
+.middle-content span[class^=icon]{
+    font-size: 3.5rem;
+    color: #652e78;
+}
+
+.main-content{
+    padding: 2rem;
+}
+
+.main-content-article{
+    margin-bottom: 3.5rem;
+}
+
+.main-content p {
+    line-height: 1.5;
+}
+
+.main-content h3{
+    letter-spacing: .2rem;
+    font-weight: normal;
+}
+
+.footer{
+    background-color: #25303e;
+    color: #83969f;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.footer-menu{
+    background-color: #303d4c;
+    padding: 0.5rem;
+}
+
+.footer-menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.footer-menu li{
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.footer-menu a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+}

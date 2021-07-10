@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media queries</title>
+
+    <style>
+        body{
+            background-color: yellow;
+            font-size: 16px;
+        }
+
+        .container{
+            background-color: white;
+            padding: 15px;
+            font-size: 24px;
+        }
+
+        .container div{
+            background-color: #ccc;
+            margin-bottom: 15px;
+            height: 150px;
+            font-size: 22px;
+        }
+
+
+       @media screen and (min-width: 600px){
+           body{
+               background-color: blue;
+           }
+
+           .container div{
+               box-sizing: border-box;
+               width: 48%;
+               float: left;
+               margin-bottom: 0;
+               margin: 1%;
+           }
+
+           .clearfix::after{
+               content: " ";
+               display: block;
+               clear: both;
+           }
+       }
+    </style>
+</head>
+<body>
+
+    <h1>Exemplo de medias queries</h1>
+
+    <p>Paragráfo qualquer</p>
+
+    <div class="teste"></div>
+
+    <div class="container clearfix" cle>
+        <div>Div 1</div>
+        <div>Div 2</div>
+    </div>
+    
+</body>
+</html>
