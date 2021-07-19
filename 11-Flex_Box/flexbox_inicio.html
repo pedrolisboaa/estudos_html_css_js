@@ -1,0 +1,119 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia">
+        
+        <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=kcss0n-SA8-oDaagIr0_6fiy-_JXl4tlFjITHBJXpwuI5hY-u90NoSo7KUqXduphADzIk5IHMYJ2R5Vk2jTXl9Hu5Ac0PQet7ZE1Krm1gX_MIARho2K_DoFAwIl77HtvMsB6UfVppEpS2U9yi_bRHAuTKowg0KbsNTc7hioWPOJaFSnCIBigYxshgisddLMk6p-OifAgPVi19gLYQpnY9HIRDc93N30bdHrtsh2WfoBBOd7wnIk6UNN1NBg6HzBdmnTW1fKFXXosQmYwmFBS5521gTIpdhIw0JGK39F7pLs8evaWQhfqkfNyKdrORUw7FbWY0r0VbF_lEQsAGd2agb3ckPqiAhTjhZuLPMjee8j2qToFCNjxA6odKXrOuLC5rHnZe8kIouqXGi8F2xU4hHW2yDM2TPgu1Q98TUyHtPVTJf4fZdVvhPumbb6uTkziPCSJKPb384DGj-NN-A-4SgQdW0WcvuOM0bu8iJUfYfXh6wPsQwliRQix_7e7ppHMDf-q1Eu6PYcpE7LjHrVTUOCHkzxedCGolK5iVEASD1nbEQN5K95CtJCn5Lt5qWEh0J_0zqJD4KfouOxfbXSixFAQjsGT3ksWJ042KWHk_dkv_rmwEK8iBrm65olgm-ynqYxSX6BXyHjBZHjBgR-Mhd6srx4kPCq6kMEfAEt7rELXxLbBI9yppOFtL5OWCr60yq21928R1nvi7fKo8fVhgh_GonhjgrBS7iti9AQzhM_4kCDCIdtZrsKVjHGvS_aTisbyzm31wsuItR8T3Djm1ls1W0CsuM_u0LQ3c3rs83o" charset="UTF-8"></script><style>
+            .flexbox{
+                height: 250px;
+                border: 1px solid red;
+                display: flex;
+                /*flex-direction: row;
+                flex-wrap: wrap;*/
+                flex-flow: row nowrap;
+                margin-bottom: 15px;
+            }
+            
+            .flexbox div{
+                background: orange;
+                width: 300px;
+                margin: 15px;
+            }
+
+            .flexbox:nth-child(5){
+                justify-content: space-between;
+            }
+
+            .flexbox:nth-child(5) div{
+                width: 40px;
+            }
+
+            .flexbox:nth-child(6){
+                align-items: center;
+                justify-content: center;
+            }
+
+            .flexbox:nth-child(6) div{
+                width: 40px;
+            }
+
+            .flexbox:nth-child(7){
+               justify-content: center;
+               align-items: center;
+               flex-wrap: wrap;
+               align-content: center;
+            }
+
+            .flexbox:nth-child(7) div{
+                width: 350px;
+            }
+
+            .flexbox:nth-child(8){
+                justify-content: center;
+                align-items: center;
+                
+               
+            }
+
+            .flexbox:nth-child(8) div{
+                background-color: blueviolet;
+                flex-basis: 50px;
+                height: 50px;
+            }
+
+            .flexbox:nth-child(8) div:nth-child(2){
+                flex-grow: 1;
+            }
+
+
+            
+        </style>
+    </head>
+    <body>
+        <h2>Display Flex</h2>
+        <p>Acomodar ou distribuir elementos de modo fácil</p>
+        <p>Ajuda a centralizar na vertical</p>
+        
+        <div class="flexbox">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </div>
+
+        <div class="flexbox">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </div>
+
+        <div class="flexbox">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </div>
+
+        <div class="flexbox">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </div>
+
+        <div class="flexbox">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </div>
+        
+        
+    </body>
+</html>
